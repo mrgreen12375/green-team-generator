@@ -1,1 +1,49 @@
-/*inital commit*/
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(199, 24, 24);
+    height: 150px;
+    width: 100%;
+    font-size: 80px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+section {
+    height: 200px;
+    width: 22%;
+    background-color: rgb(205, 205, 205);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.nameTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    color: white;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
