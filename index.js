@@ -121,7 +121,7 @@ const addIntern = () =>{
 }
 
 const createHTML = () =>{
-  const builtString = htmlContent(employees);
+  const builtString = htmlContent(questions);
 
   fs.writeFile(output, builtString, (err) =>
   err ? console.error(err) : console.log('Success!')
