@@ -7,6 +7,7 @@ const createdHTML = (questions) => {
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css" />
+        <link rel="shortcut icon" href="team-favicon.png" type="image/x-icon">
         <title>green-team-generator</title>
     </head>
     <header>Green Team</header>
@@ -32,7 +33,7 @@ const createdHTML = (questions) => {
                 <ul>
                     <li>ID: ${employee.getId()}</li>
                     <li>Email: <a href='mailto:${employee.getEmail()}'>${employee.getEmail()}</a></li>
-                    <li>GitHub: <a href="https://www.github.com/${employee.getGithub()}">${employee.getGithub()}</a></li>
+                    <li>GitHub: <a href="https://www.github.com/${employee.getGithub()}" target="_blank">${employee.getGithub()}</a></li>
                 </ul>
             </div>
         </section>`
