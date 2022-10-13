@@ -48,3 +48,11 @@ li {
     margin: 15px;
     font-family: 'Courier New', Courier, monospace;
 }
+
+li a:link {
+    color: blue;
+}
+
+li a:visited {
+    color: blue;
+}
