@@ -1,3 +1,5 @@
+//setup links to the classes and html content that will be generated
+//setup packages that will be used
 const Manager = require('./lib/manager');
 const Engineer = require('./lib/engineer');
 const Intern = require('./lib/intern');
@@ -9,23 +11,24 @@ const fs = require('fs');
 const path = require('path');
 const output = path.join('dist','index.html');
 
+//setup array to push responses into
 const questions = []
-
+//setup manager, engineer, intern, and role questions arrays
 const managerQuestions = [
     {
         type: 'input',
         name: 'managerName',
-        message: 'Enter manager\'s name?'
+        message: 'Enter manager\'s name'
     },
     {
         type: 'input',
         name: 'managerId',
-        message: 'Enter manager\'s employee id?'
+        message: 'Enter manager\'s employee id'
     },
     {
         type:'input',
         name: 'managerEmail',
-        message: 'Enter manager\'s email address?'
+        message: 'Enter manager\'s email address'
     },
     {
         type: 'input',
@@ -89,7 +92,7 @@ const role = [
         choices: ['Add An Engineer', 'Add An Intern', 'Finish'],
     }
 ]
-
+//setup functions to prompt the questions and push the responses into the questions array
 const addManager= () =>{
     inquirer
       .prompt(managerQuestions)
@@ -119,7 +122,7 @@ const addIntern = () =>{
           showRoles();
       })
 }
-
+//setup funtions to create the html with the objects in the questions array
 const createHTML = () =>{
   const builtString = htmlContent(questions);
 
@@ -128,7 +131,7 @@ const createHTML = () =>{
 );
 
 }
-
+//setup switch case to prompt the role options and run the role function based off of the users response
 const showRoles = () =>{
     inquirer
         .prompt(role)

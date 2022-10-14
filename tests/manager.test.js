@@ -1,3 +1,5 @@
+//setup import of the manager class
+//setup tests to expect the objects to equal true and the specific role, name, id, email and office number
 const Manager = require('../lib/manager')
 
 describe('Intern', () =>{

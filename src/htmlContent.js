@@ -1,3 +1,6 @@
+//setup funtion to pull from the object in the questions array
+//setup a header section, body sections and footer sections
+//setup if statement for the the role sections and used template literals for the users responses
 const createdHTML = (questions) => {
 
     const header = `<!DOCTYPE html>

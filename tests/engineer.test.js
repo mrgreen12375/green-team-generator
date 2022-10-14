@@ -1,3 +1,5 @@
+//setup import of the engineer class
+//setup tests to expect the objects to equal true and the specific role, name, id, email and github
 const Engineer = require('../lib/engineer')
 
 describe('Engineer', () =>{

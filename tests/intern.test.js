@@ -1,3 +1,5 @@
+//setup import of the intern class
+//setup tests to expect the objects to equal true and the specific role, name, id, email and school
 const Intern = require('../lib/intern')
 
 describe('Intern', () =>{

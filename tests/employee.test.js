@@ -1,3 +1,5 @@
+//setup import of the employee class
+//setup tests to expect the objects to equal true and the specific name, id, email, and role
 const Employee = require('../lib/employee');
 
 describe('Employee', () => {
